@@ -8,6 +8,13 @@
 <body>
   <h1>Curso VueJS</h1>
   <div id="app">
+    <input type="text" v-on:input="changeTitle"> 
+    <!-- v-on é chamado de diretiva no vuejs.
+    Serve para avisar ao vuejs para ficar 'ouvindo'
+    esse elemento para executar algum evento.
+    Informamos então que o evento a ser ouvido é o input,
+    ou seja, entrada de dados e o evento a ser executado
+    é a função changeTitle -->
     <p>{{ title }}</p>
   </div>
 
